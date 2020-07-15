@@ -11,3 +11,9 @@ Extend the periodic task from the previous assignment by addingthe following com
 •priority
 •CPU load factor
 •scheduling policy (SCHEDFIFOorSCHEDRR)
+
+
+# Questions Task 1
+- How should this be implemented, because sigawait and sigaction limit each other in some ways?
+- How can we use sleep? Should this be done from outside (viua terminale knowing pid)
+
