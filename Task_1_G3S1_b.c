@@ -51,7 +51,9 @@ int signum;
 int counter = 0;
 
 while(1){
-	if(counter%10 == 0) sleep(2);
+	if(counter%10 == 0){
+	       	sleep(2);
+		counter = 0;}
 	sigwait(&signal_set, &signum);
 	printf("--- Task completed ---\n");
 	counter++;
