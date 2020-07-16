@@ -52,6 +52,7 @@ sleep(10);
 while (1){
 //		unsigned long mesg;
 	sigprocmask(SIG_BLOCK, &signal_set, NULL);
+	sleep(10);
 	sigwait(&signal_set, &signum);
 	printf("--- Task completed ---\n");
 	// since we put SIGALRM into the blocked singal then  the next step 		we will stop on sigwait
