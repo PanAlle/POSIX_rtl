@@ -7,13 +7,10 @@ Write a periodic real-time task that uses a POSIX timer and the signal it sends 
 ## TASK 2
 
 Extend the periodic task from the previous assignment by addingthe following command line arguments:
+
 •period (in milliseconds, from 1 ms to 999 ms)
 •priority
 •CPU load factor
 •scheduling policy (SCHEDFIFOorSCHEDRR)
 
-
-# Questions Task 1
-- How should this be implemented, because sigawait and sigaction limit each other in some ways?
-- How can we use sleep? Should this be done from outside (viua terminale knowing pid)
 
