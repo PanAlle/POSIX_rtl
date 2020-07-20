@@ -16,6 +16,7 @@ Extend the periodic task from the previous assignment by addingthe following com
 To run the task on the server 
 
 root@ gcc -Wall -o task2 Task_2_G3S1.c -lrt
+
 root@ taskset -c 31 ./task2 550 100000 1 0
 
 ##FIFO Explanation 
