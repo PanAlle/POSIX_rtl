@@ -13,6 +13,7 @@ void new_action_funct(){
 printf("Missed deadline \n");
 }
 
+
 void p_task(long period_ms, int load, timer_t timer, struct itimerspec time_left){
 for(int i = 0; i < load*1000; i++){}
 
@@ -29,8 +30,6 @@ sigset_t signal_set;
 timer_t timer;
 struct itimerspec timer_spec, time_left;
 //struct sigaction task;
-//memset(&task, 0, sizeof(task));
-
 
 
 
@@ -40,7 +39,6 @@ timer_create(CLOCK_REALTIME, NULL, &timer);
 // Specify the timer’s period.
 long period_ms = atoi(argv[1]);
 int load = atoi(argv[2]);
-printf("Started with a period in ms of:%s\n", argv[3]);
 printf("Started with a period in ms of:%ld\n", period_ms);
 timer_spec.it_value.tv_sec = 0;
 timer_spec.it_value.tv_nsec = period_ms*1000000; 
@@ -59,7 +57,7 @@ sigaction(SIGALRM, &new_action, NULL);
 
 if (atoi(argv[3]) == 1){
 	struct sched_param spar;
-	    spar.sched_priority = sched_get_priority_min(SCHED_FIFO) + atoi(argv[4]) + 1;
+	    spar.sched_priority = sched_get_priority_min(SCHED_FIFO) + atoi(argv[4]);
 		printf("Priority of task: %d \n", spar.sched_priority);	
 	    if(sched_setscheduler(0, SCHED_FIFO, &spar) < 0)
 	    {
