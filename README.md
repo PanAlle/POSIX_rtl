@@ -10,8 +10,7 @@ Extend the periodic task from the previous assignment by addingthe following com
 
 •period (in milliseconds, from 1 ms to 999 ms)
 •priority
-
-• CPU load factor
+•CPU load factor
 •scheduling policy (SCHEDFIFOorSCHEDRR)
 
 
