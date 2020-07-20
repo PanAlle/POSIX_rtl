@@ -13,4 +13,10 @@ Extend the periodic task from the previous assignment by addingthe following com
 •CPU load factor
 •scheduling policy (SCHEDFIFOorSCHEDRR)
 
+To run the task on the server 
+
+root@:~/ASS4G1S3# gcc -Wall -o task2 Task_2_G3S1.c -lrt
+root@:~/ASS4G1S3# taskset -c 31 ./task2 550 100000 1 0
+
+
 
