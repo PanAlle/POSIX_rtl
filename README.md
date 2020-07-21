@@ -20,7 +20,7 @@ Extend the periodic task from the previous assignment by addingthe following com
 The task take as input period, load factor (prop. to time spent in a useless for loop), scheduling policy (FIFO , RR) and the relative associated priority (1 - 99).
 
 TAKS 1  = period = 500ms, load = 100000
-TAKS 1  = period = 550ms, load = 100000
+TAKS 2  = period = 550ms, load = 100000
 
 The task was run in differnt configuration:
  - Taks1 alone in RR, Taks 2 alone in RR
