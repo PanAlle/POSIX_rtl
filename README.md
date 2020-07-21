@@ -1,14 +1,14 @@
 # POSIX_rtl
 Posix compliant program to test rt application
 
-## TASK 1
+# TASK 1
 
 rite a periodic real-time task that uses a POSIX timer and the signal it sends to implement a periodic task.Your task should output a warning if the deadline (equal to period) is missed.  Hint:  If a signal is received and the process is not blocking on sigwait, the registered signal handler is used instead.
-# Implementation
+## Implementation
 Task 1 implement a counter and define a handler for the signal SIGALRM, while the process is stuck in the while loop, when the counter put the execution to sleep, the defined handler is called, resulitng in a "missed deadline" print. During the normal execution, based on the clock period the loop is stopped on sigwait reuslting in a periodic print of "--completed task--".
 
 
-## TASK 2
+# TASK 2
 
 Extend the periodic task from the previous assignment by addingthe following command line arguments:
 
@@ -16,7 +16,7 @@ Extend the periodic task from the previous assignment by addingthe following com
 •priority
 •CPU load factor
 •scheduling policy (SCHEDFIFOorSCHEDRR)
-# Implementation
+## Implementation
 The task take as input period, load factor (prop. to time spent in a useless for loop), scheduling policy (FIFO , RR) and the relative associated priority (1 - 99).
 
 TAKS 1  = period = 500ms, load = 100000
